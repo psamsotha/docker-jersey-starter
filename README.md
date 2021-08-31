@@ -1,6 +1,8 @@
 # Docker Jersey Starter
 
-## Run
+## Development
+
+### Run
 
 ```
 docker-compose -f docker-compose.dev.yml up
@@ -10,4 +12,18 @@ docker-compose -f docker-compose.dev.yml up
 
 ```
 curl -i localhost:8080/hello
+```
+
+## Production
+
+### Build Image
+
+```shell
+docker build --tag jersey-docker:latest .
+```
+
+### Run Container
+
+```shell
+docker run -p 8080:8080 jersey-docker:latest
 ```

@@ -3,6 +3,7 @@ services:
   jersey:
     build:
       context: .
+      dockerfile: Dockerfile.dev
     volumes:
     - /app/target
     - .:/app

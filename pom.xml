@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>docker-jersey-starter</artifactId>
+    <artifactId>jersey-docker</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>docker-jersey-starter</name>
+    <name>jersey-docker</name>
 
     <dependencyManagement>
         <dependencies>
@@ -107,6 +107,7 @@
     </dependencies>
 
     <build>
+        <finalName>${project.name}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
